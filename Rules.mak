@@ -34,11 +34,11 @@ endif
 
 TOP := $(dir $(lastword $(MAKEFILE_LIST)))
 
-LLVMROOTDIR = $(TOP)/../third_party/llvm-build
+LLVMROOTDIR = $(TOP)/../../llvm/llvm-3.1
 LLVMTOOLDIR = $(LLVMROOTDIR)/Release+Asserts/bin
 LLVMPLUGIN = $(LLVMROOTDIR)/Release+Asserts/lib/LLVMgold.so
 
-BINUTILSDIR = $(TOP)/../third_party/binutils-install
+BINUTILSDIR = $(TOP)/../../binutils/install
 
 DODEBUG=y
 
